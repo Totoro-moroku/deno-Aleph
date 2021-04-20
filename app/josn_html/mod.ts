@@ -34,7 +34,7 @@ function handleRequest(request) {
   }
 
   return new Response(
-    App,
+    <App></App>,
     {
       headers: {
         "content-type": "text/html; charset=UTF-8",
