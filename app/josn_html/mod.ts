@@ -36,6 +36,7 @@ function handleRequest(request) {
       align="center"
       style="font-family: Avenir, Helvetica, Arial, sans-serif; font-size: 1.5rem;"
     >
+    <div>aaaa</div>
       <h1>Return JSON and/or HTML Example</h1>
       <p>
         <a href="/html">/html</a> - responds with HTML to the request.
