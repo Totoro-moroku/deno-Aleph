@@ -9,4 +9,4 @@ export default function App({ Page, pageProps }: { Page: ComponentType<any>, pag
       <Page {...pageProps} />
     </main>
   )
-}
+
