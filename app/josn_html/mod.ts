@@ -1,4 +1,15 @@
-import{} App from '../app'
+import React, { ComponentType } from 'react'
+
+function App({ Page, pageProps }: { Page: ComponentType<any>, pageProps: any }) {
+  return (
+    <main>
+      <head>
+        <meta name="viewport" content="width=device-width" />
+      </head>
+      <Page {...pageProps} />
+    </main>
+  )
+}
 
 function handleRequest(request) {
   const { pathname } = new URL(request.url);
@@ -34,7 +45,7 @@ function handleRequest(request) {
   }
 
   return new Response(
-    <App></App>,
+    <App/>,
     {
       headers: {
         "content-type": "text/html; charset=UTF-8",
